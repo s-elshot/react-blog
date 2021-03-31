@@ -1,0 +1,13 @@
+import React from 'react';
+
+function HomePage() {
+    return (
+        <>
+            <h2>Who?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi aperiam cum eum laudantium maxime quasi temporibus, veniam vero voluptatum! Debitis eaque eius ex nesciunt veniam. Exercitationem porro provident repellat voluptatibus! Amet dolorum enim nesciunt omnis quam recusandae sit voluptates. Ab accusantium ad assumenda aut beatae blanditiis corporis cumque cupiditate dignissimos dolor, dolorem doloribus ea enim error hic illo illum incidunt laboriosam laudantium libero minima minus molestias nam nostrum numquam officia qui quis quisquam quod temporibus ullam unde voluptatem, voluptatum! Asperiores dolorum excepturi harum ipsam molestias nemo quidem quod tempore unde veritatis! Assumenda at commodi dolores eos error, explicabo impedit quo reprehenderit sed, sit suscipit tenetur? Dolores modi nobis ratione soluta. Debitis omnis optio pariatur provident quo sequi tenetur! Id impedit repellendus sapiente soluta? Cupiditate dolorum earum impedit perferendis, possimus recusandae sed totam! Ab accusamus ad adipisci dolor dolorem, dolorum eius eligendi explicabo hic in, incidunt laboriosam laborum laudantium maiores mollitia nemo, nesciunt nisi nobis obcaecati optio perspiciatis placeat porro possimus provident quaerat quam quos repudiandae sed sint totam ullam unde veritatis vero! Ab alias aliquid amet beatae corporis distinctio esse est eum impedit iure iusto magnam mollitia neque nesciunt, numquam optio pariatur recusandae similique sit soluta totam unde vel!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate esse non, omnis reprehenderit sint velit voluptate! Ab beatae consequatur culpa deserunt dicta doloribus explicabo ipsa magni maiores modi nam nisi nulla numquam obcaecati pariatur quasi, qui quibusdam quos reiciendis unde ut voluptas voluptate? A ab alias, asperiores, beatae commodi delectus dolore eius eligendi eum excepturi expedita impedit laboriosam maiores nemo non sapiente similique unde vero. Accusantium at beatae blanditiis commodi eligendi sapiente temporibus vero? Accusamus accusantium distinctio doloribus eveniet itaque odit praesentium quasi ratione. Aperiam asperiores autem doloremque eaque, illum, magni minus molestias numquam, optio porro quibusdam sed temporibus veritatis?</p>
+        </>
+    );
+}
+
+export default HomePage;
