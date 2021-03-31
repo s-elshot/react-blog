@@ -1,6 +1,7 @@
 import React, {Fragment} from 'react';
 import PostList from "../components/PostList.js";
-// import posts from '../data/posts.json';
+import Posts from '../data/posts.json';
+
 
 function BlogOverview() {
 
@@ -8,8 +9,11 @@ function BlogOverview() {
     // const [isAuthenticated, toggleIsAuthenticated] = useState(false)
     return (
         <Fragment>
-        <h2>Blog overview</h2>
-        <PostList/>
+            <h2>Blog overview</h2>
+            <div>
+
+            </div>
+            <PostList/>
         </Fragment>
     );
 }

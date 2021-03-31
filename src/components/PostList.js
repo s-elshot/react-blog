@@ -1,11 +1,8 @@
 
-
-// import React, { useState } from 'react';
-
 import React, {Fragment} from "react";
 import Posts from '../data/posts.json';
 import {NavLink} from "react-router-dom";
-// import {useParams} from "react-router-dom";
+
 
 function PostList() {
     // We houden in de state bij of iemand is "ingelogd" (simpele versie)
@@ -18,11 +15,10 @@ function PostList() {
             <section>
                 {Posts.map((postDetails) => {
                      return <ul>
-                         <li>
-                             {Posts.text}
-                             <NavLink to={`/blog/${postDetails.id}`}>{postDetails.title}</NavLink>
-                        </li>
-                     </ul>
+                                <li>
+                                    <NavLink to={`/blog/${postDetails.id}`}>{postDetails.title}</NavLink>
+                                </li>
+                            </ul>
               })}
           </section>
         </Fragment>

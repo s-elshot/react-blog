@@ -5,7 +5,7 @@ import {useParams
 
 
 function BlogPost () {
-    // dynamic component
+
     const {idUrl} = useParams();
     const singlePost = PostData[`${idUrl}`]
 
