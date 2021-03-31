@@ -2,7 +2,7 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Redirect
+    // Redirect
 } from 'react-router-dom';
 
 // import React, { useState } from 'react';
@@ -13,6 +13,7 @@ import LoginPage from "./pages/LoginPage";
 import BlogOverview from "./pages/BlogOverview";
 import BlogPost from "./pages/BlogPost";
 import Navigation from "./components/Navigation";
+import PrivateRoute from "./components/PrivateRoute";
 
 
 function App() {
@@ -43,20 +44,15 @@ function App() {
                 />
             </Route>
 
-            <Route path="/blogpost">
-                {signedIn
-                    ?<BlogOverview/>
-                    : <Redirect to="/"/>
 
-                }
-            </Route>
+            <PrivateRoute path="/blogpost" signedIn={signedIn}>
+                <BlogOverview/>
+            </PrivateRoute>
 
-            <Route path='/blog/:idUrl'>
-                {signedIn
-                    ?<BlogPost/>
-                    : <Redirect to="/"/>
-                }
-            </Route>
+
+            <PrivateRoute path='/blog/:idUrl' signedIn={signedIn}>
+                <BlogPost/>
+            </PrivateRoute>
 
         </Switch>
     </Router>

@@ -9,6 +9,8 @@ function BlogPost () {
     const {idUrl} = useParams();
     const singlePost = PostData[`${idUrl}`]
 
+
+
     return(
         <div className="individualPosts">
             <h2>{singlePost.title}</h2>
