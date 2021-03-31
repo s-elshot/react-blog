@@ -1,7 +1,4 @@
-
-
 function LoginPage(props) {
-
 
     return (
         <>

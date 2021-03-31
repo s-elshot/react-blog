@@ -2,10 +2,8 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    // Redirect
 } from 'react-router-dom';
 
-// import React, { useState } from 'react';
 import './App.css';
 import React, {useState} from "react";
 import HomePage from "./pages/HomePage";
@@ -15,11 +13,9 @@ import BlogPost from "./pages/BlogPost";
 import Navigation from "./components/Navigation";
 import PrivateRoute from "./components/PrivateRoute";
 
-
 function App() {
 
     const [signedIn, toggleSignedIn] = useState(false);
-
 
   return (
     <Router>
@@ -30,9 +26,7 @@ function App() {
                 />
         </nav>
 
-
         <Switch>
-
             <Route exact path="/">
                 <HomePage/>
             </Route>
@@ -44,11 +38,9 @@ function App() {
                 />
             </Route>
 
-
             <PrivateRoute path="/blogpost" signedIn={signedIn}>
                 <BlogOverview/>
             </PrivateRoute>
-
 
             <PrivateRoute path='/blog/:idUrl' signedIn={signedIn}>
                 <BlogPost/>
